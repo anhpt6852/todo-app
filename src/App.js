@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import data from "./data.json";
-import Header from "./components/Header";
-import ToDoList from "./components/ToDoList";
+import React, { useState } from 'react';
+import data from './data.json';
+import Header from './components/Header';
+import ToDoList from './components/ToDoList';
 import './App.css';
 
 function App() {
@@ -38,14 +38,14 @@ function App() {
   const handleSubmit = (event) => {
       event.preventDefault();
       addTask(userInput);
-      setUserInput("");
+      setUserInput('');
   }
 
   return (
-    <div className="App">
+    <div className='App'>
       <Header />
       <form className = 'add-form' onSubmit={handleSubmit}>
-            <input value={userInput} type="text" onChange={handleChange} placeholder="Enter task..."/>
+            <input value={userInput} type='text' onChange={handleChange} placeholder='Enter task...'/>
             <button className= 'add-button'>Submit</button>
         </form>
       <ToDoList

@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const ToDo = ({ todo, handleToggle }) => {
   const handleClick = (event) => {
@@ -10,9 +10,9 @@ const ToDo = ({ todo, handleToggle }) => {
     <div
       id={todo.id}
       key={todo.id}
-      name="todo"
+      name='todo'
       onClick={handleClick}
-      className={todo.complete ? "todo strike" : "todo"}
+      className={todo.complete ? 'todo strike' : 'todo'}
     >
       {todo.task}
     </div>
